@@ -8,6 +8,7 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'doc',
   hash: true,
+  publicPath: `/dumi-web-ui/`,
   exportStatic: {},
   // more config: https://d.umijs.org/config
 });
