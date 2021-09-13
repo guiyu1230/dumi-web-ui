@@ -47,7 +47,7 @@ module.exports = {
 
     'type-empty': [2, 'never'],
 
-    'scope-empty': [2, 'never'],
+    'scope-empty': [0, 'never'],
 
     'subject-empty': [2, 'never'],
 
