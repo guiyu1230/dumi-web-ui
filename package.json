@@ -34,8 +34,13 @@
     "react": "^16.12.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.14",
+    "eslint": "^8.1.0",
     "eslint-plugin-react": "^7.26.1",
     "father-build": "^1.17.2",
     "lint-staged": "^10.0.7",

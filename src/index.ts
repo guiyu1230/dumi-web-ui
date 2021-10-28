@@ -1,7 +1,4 @@
-
-if(process.env.NODE_ENV === "development") {
-    require("antd/dist/antd.css");
-}
+import 'antd/dist/antd.css';
 
 export { default as TimeSlice } from './list/timeSlice';
 
