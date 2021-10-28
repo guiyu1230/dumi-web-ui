@@ -1,3 +1,8 @@
-export { default as Foo } from './Foo';
 
-export { default as Foo1 } from './Foo1';
+if(process.env.NODE_ENV === "development") {
+    require("antd/dist/antd.css");
+}
+
+export { default as TimeSlice } from './list/timeSlice';
+
+export { default as VirtualList } from './list/virtualList';
