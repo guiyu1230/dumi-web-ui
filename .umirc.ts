@@ -1,4 +1,4 @@
-import { defineConfig } from 'dumi';
+import { defineConfig, IConfig } from 'dumi';
 
 export default defineConfig({
   title: 'dumi-web-ui',
@@ -11,5 +11,10 @@ export default defineConfig({
   base: `/dumi-web-ui/`,
   publicPath: `/dumi-web-ui/`,
   exportStatic: {},
+  dynamicImportSyntax: {},
+  resolve: {
+    includes: ['docs', 'src'],
+  },
+  styles: ['https://cdn.jsdelivr.net/npm/antd@4.16.13/dist/antd.css'],
   // more config: https://d.umijs.org/config
-});
+} as IConfig);
