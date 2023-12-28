@@ -15,6 +15,6 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'src'],
   },
-  styles: ['https://cdn.jsdelivr.net/npm/antd@4.16.13/dist/antd.css'],
+  styles: ['https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.3/antd.min.css'],
   // more config: https://d.umijs.org/config
 } as IConfig);
