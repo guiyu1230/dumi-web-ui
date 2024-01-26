@@ -19,22 +19,34 @@ import { Input, Select, Checkbox, Switch, DatePicker } from 'antd';
 const { RangePicker } = DatePicker;
 
 function Demo() {
+  const [form] = Form.useForm();
+
   const onFinish = (values: any) => {
     console.log('finish', values);
+  };
+
+  const onReset = (event) => {
+    console.log('reset');
   };
 
   const onValuesChange = (changedValues: any, values: any) => {
     console.log('onValuesChange', changedValues, values);
   };
 
+  const handleClick = () => {
+    console.log(form);
+  };
+
   return (
     <Form
+      form={form}
       initialValues={{
         username: '1234',
         is_admin: true,
         switch: true,
       }}
       onFinish={onFinish}
+      onReset={onReset}
       onValuesChange={onValuesChange}
     >
       <Form.Item label="用户名" name="username" initialValue="345">
@@ -66,6 +78,9 @@ function Demo() {
       <Form.Item>
         <button type="submit">提交</button>
         <input type="reset" value="重置" />
+        <button type="button" onClick={handleClick}>
+          获取实例
+        </button>
       </Form.Item>
     </Form>
   );
